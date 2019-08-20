@@ -44,7 +44,6 @@ nav{
 .nav__links li a:hover{
   color: #7a4b33;
 }
-/*test */
 .overlay {
     height: 0%;
     width: 100vw;
@@ -163,6 +162,10 @@ main{
 }
 .offert__items--img{
     max-width: 50%;
+}
+.contact__icon{
+    height: 25px;
+    margin: 5px;
 }
 
 .stopka{
