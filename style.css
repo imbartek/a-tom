@@ -44,6 +44,13 @@ nav{
 .nav__links li a:hover{
   color: #7a4b33;
 }
+.links__wrapper{
+    display: flex;
+}
+.links__options{
+    list-style: none;
+    display: none;
+}
 .overlay {
     height: 0%;
     width: 100vw;
@@ -134,10 +141,13 @@ main{
     -moz-box-shadow: 0 4px 5px -2px rgba(0,0,0,0.75);
     box-shadow: 0 4px 5px -2px rgba(0,0,0,0.75);
 }
+.about, .contact{
+    height: 90vh;
+    justify-content: space-around;
+}
 .title{
     text-transform: uppercase;
     font-size: 2em;
-    margin-top: 15vh;
 }
 .offert__items{
     display: flex;
