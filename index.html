@@ -2,11 +2,17 @@
 <html lang="pl">
 <head>
     <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/a-tom_logo--v3.png">
+    <link rel="shortcut icon" type="image/png" href="/img/a-tom_logo--v3.png"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="W salonie A_TOM kupisz meble oraz artykuły wyposażenia wnętrz z dostawą do domu. Sprawdź naszą ofertę!">
+    <meta name="keywords" content="meble, dabrowa gornicza, salon meblowy, a-tom, atom, kuchenne, wypoczynkowe, dzienne, sypialniane">
+    <meta name="robots" content="index/follow"> 
     <title>Salon meblowy A-TOM</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <script
   src="https://code.jquery.com/jquery-2.2.4.min.js"
   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
@@ -61,6 +67,7 @@
         <section class="offert" id="offert">
             <header>
                 <h1 class="title">Oferta</h1>
+                <div class="header__line"></div>
             </header>
             <!--Meble wypoczynkowe-->
                 <!--Sofy-->
@@ -119,6 +126,7 @@
         <section class="about" id="about">
             <header>
                 <h1 class="title">O nas</h1>
+                <div class="header__line"></div>
             </header>
             <p>Sklep Meblowy A-TOM to firma rodzinna założona w 1997 roku w         Dąbrowie Górniczej i jest dziś uznaną marką na lokalnym rynku w     segmencie sprzedaży detalicznej mebli. 
                 W naszym salonie znajdą Państwo tylko i wyłącznie produkty z Polskich fabryk meblowych, dostarczane przez producentów, z którymi współpracujemy niemalże od początku naszej działalności. 
@@ -132,18 +140,23 @@
         <section class="contact" id="contact">
             <header>
                     <h1 class="title">Kontakt</h1>
+                    <div class="header__line"></div>
             </header>
-            <p><img src="./img/tele_icon.png" alt="icon" class="contact__icon"> 32 268 32 18</p>
-            <p>ul. Wojska-Polskiego 34</p>
-            <p>41-300 Dąbrowa Górnicza</p>
+            <article class="contact__description">
+                <p><img src="./img/tele_icon.png" alt="icon" class="contact__icon"> 32 268 32 18</p>
+                <p>ul. Wojska-Polskiego 34</p>
+                <p>41-300 Dąbrowa Górnicza</p>
+            </article>
+            <iframe title="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10189.272553221352!2d19.2011874!3d50.3233156!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x105e8646e5de4251!2sSalon%20Meblowy%20A-TOM!5e0!3m2!1spl!2spl!4v1568813345940!5m2!1spl!2spl" frameborder="0" style="border:0;" allowfullscreen="" class="contact__map"></iframe>
         </section>
-        <footer class="stopka">
-            <small class="stopka__item">Footer</small>
+        <footer>
+            <small class="stopka__item">Created by <span>im.bartek@tlen.pl</span>
+            </small>
         </footer>
     </main>
-    <script src="hamburger.js"></script>
-    <script src="btn.js"></script>
-    <script src="logo.js"></script>
+    <script src="/scripts/hamburger.js"></script>
+    <script src="/scripts/btn.js"></script>
+    <script src="/scripts/logo.js"></script>
     <script>
         AOS.init();
     </script>

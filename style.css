@@ -95,10 +95,11 @@ nav{
 
 main{
     background-color: #fff;
+    margin-top: -10px;
 }
 .main__page--hello{
     font-size: 4em;
-    margin-bottom: 5vh;
+    margin:5vh 0 5vh 0;
 }
 .main__page--hello span{
     font-size: 1.4em;
@@ -107,14 +108,14 @@ main{
 }
 .main__page--btn{
     height: 15vh;
-    width: 20vw;
+    width: 30vw;
     border: none;
     border-radius: 80px;
     font-size: 2em;
     background-color: #7a4b33;
     color: #fff;
     text-transform: uppercase;
-    margin-bottom: 30vh;
+    margin-bottom: 20vh;
     outline: none;
 }
 .main__page--btn:hover{
@@ -135,19 +136,46 @@ main{
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: 5vh;
     padding: 0 10vw 3vh 10vw;
     -webkit-box-shadow: 0 4px 5px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: 0 4px 5px -2px rgba(0,0,0,0.75);
     box-shadow: 0 4px 5px -2px rgba(0,0,0,0.75);
+    background-image: linear-gradient(
+        to right,
+    #7a4b3381,
+    #fff,
+    #7a4b3381 
+    );
 }
 .about, .contact{
     height: 90vh;
     justify-content: space-around;
 }
+.about p{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
 .title{
     text-transform: uppercase;
-    font-size: 2em;
+    font-size: 3em;
+    margin-top: 3vh;
+}
+.header__line{
+    border-radius: 10px;
+    height: 5px;
+    width: 100%;
+    background: linear-gradient(90deg, #7a4b33, #58584f, #313023, #7a4b33);
+    background-size: 400%;
+    animation: animate 8s linear infinite;
+}
+@keyframes animate {
+	0%{
+        background-position: 0%;
+    }
+    100%{
+        background-position: 400%;
+    }
 }
 .offert__items{
     display: flex;
@@ -166,6 +194,8 @@ main{
 .offert__title{
     text-transform: uppercase;
     margin-bottom: 5vh;
+    font-size: 1.5em;
+    font-weight: bold;
 }
 .offert__description{
     text-align: left !important;
@@ -173,18 +203,31 @@ main{
 .offert__items--img{
     max-width: 50%;
 }
+.contact__description{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact__description p{
+    margin: 2vh 0 2vh 0;
+    font-size: 2.1em;
+}
 .contact__icon{
     height: 25px;
-    margin: 5px;
+}
+.contact__map{
+    height: 50%;
+    width: 50%;
 }
 
-.stopka{
+footer{
     background-color: rgba(122, 75, 51, 0.884);
     color: #fff;
     height: 3vh;
     width: 100%;
     text-align: center;
-    margin-top: 5vh;
     position: sticky;
     bottom: 0;
 }
@@ -238,7 +281,7 @@ main{
         top: 0;
     }
     .main__page--hello{
-        padding-bottom: 10vh;
+        padding-bottom: 20vh;
     }
     .main__page--btn{
         width: 50vw;
