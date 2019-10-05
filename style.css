@@ -285,12 +285,10 @@ footer{
         transform: rotate(-45deg);
         top: 0;
     }
-    .main__page--hello{
-        padding-bottom: 20vh;
-    }
     .main__page--btn{
         width: 50vw;
         height: 10vh;
+        font-size: 2em;
     }
     .offert__items{
         display: flex;
