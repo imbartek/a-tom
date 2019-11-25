@@ -236,6 +236,33 @@ footer{
     position: sticky;
     bottom: 0;
 }
+.ad{
+    position: fixed;
+    top: 50%;
+    background-color: #f1f1f1;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    border-top-right-radius: 30%;
+    border-bottom-right-radius: 30%;
+    box-shadow: 0 5px 15px -5px #00000070;
+    color: #3498db;
+    transition: 0.2s linear;
+    cursor: pointer;
+}
+.ad:hover{
+    width: 100px;
+    height: 100px;
+}
+.ad i{
+    line-height: 45px;
+    font-size: 26px;
+    transition: 0.2s linear;
+}
+.ad:hover i{
+    transform: scale(2);
+    line-height: 90px;
+}
 @media screen and (max-width: 768px){
     .line{
         width: 30px;
@@ -305,5 +332,9 @@ footer{
     }
     .offert__items--img{
         max-width: 100%;
+    }
+    .ad{
+        height: 40px;
+        width: 40px;
     }
 }
